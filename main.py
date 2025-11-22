@@ -27,7 +27,7 @@ def load_and_train_model():
     # Preprocessing
     df_copy = df.copy(deep=True)
     cols_to_clean = ['Glucose','BloodPressure','SkinThickness','Insulin','BMI']
-    df_copy[cols_to_clean] = df_copy[cols_to_clean].replace(0, np.NaN)
+    df_copy[cols_to_clean] = df_copy[cols_to_clean].replace(0, np.nan)
 
     # Mengisi NaN dengan Median
     for col in cols_to_clean:
